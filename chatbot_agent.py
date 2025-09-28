@@ -5,7 +5,7 @@ import streamlit as st
 
 
 load_dotenv()
-GEMINI_API_KEY = st.secrets("GEMINI_API_KEY")
+GEMINI_API_KEY = st.secrets["GEMINI_API_KEY"]
 if not GEMINI_API_KEY:
     raise ValueError("GEMINI_API_KEY not found in .env file. Please check your environment.")
 
